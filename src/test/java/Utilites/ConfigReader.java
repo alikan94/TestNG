@@ -19,7 +19,8 @@ public class ConfigReader {
         } catch (IOException e) {
             e.printStackTrace();
         }
-    }
+    }   // static blok olmasının sebebi class calistigi surece bu kod blogu 1 kez calismis oluyor
+        // eger asagidaki methodda olsa idi her seferinde tekrar tekrar sıfırdan calisacakti.
 
     public static String getProperty(String key){
 
