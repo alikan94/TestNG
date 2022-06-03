@@ -1,34 +1,36 @@
 package tests.day19_smokeTest;
 
-import Utilites.ConfigReader;
-import Utilites.Driver;
+import utilities.ConfigReader;
+import utilities.Driver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.BrcPage;
 
 public class PozitifLoginTest {
 
-    BrcPage brcPage = new BrcPage();
+    BrcPage brcPage;
 
-    @Test
-    public void positiveLoginTest() {
-
-            // Bir test method olustur positiveLoginTest()
-            //         https://www.bluerentalcars.com/ adresine git
+    @Test(priority = -1)
+    public void positiveLoginTest() throws InterruptedException {
+        brcPage = new BrcPage();
+        // Bir test method olustur positiveLoginTest()
+        //         https://www.bluerentalcars.com/ adresine git
+        Thread.sleep(2200);
         Driver.getDriver().get(ConfigReader.getProperty("brcUrl"));
+        Thread.sleep(2200);
 
-            //        login butonuna bas
+        //        login butonuna bas
         brcPage.ilkLoginButonu.click();
 
-            // test data user email: customer@bluerentalcars.com ,
+        // test data user email: customer@bluerentalcars.com ,
         brcPage.emailTextBox.sendKeys(ConfigReader.getProperty("brcValidmail"));
-            // test data password : 12345
+        // test data password : 12345
         brcPage.passwordTextBox.sendKeys(ConfigReader.getProperty("brcValidPassword"));
-            // login butonuna tiklayin
+        // login butonuna tiklayin
         brcPage.ikinciLoginButonu.click();
-            // Degerleri girildiginde sayfaya basarili sekilde girilebildigini test et
-        String actualUserName= brcPage.kullaniciProfilIsmi.getText();
-        Assert.assertEquals(actualUserName,ConfigReader.getProperty("brcValidUserName"));
+        // Degerleri girildiginde sayfaya basarili sekilde girilebildigini test et
+        String actualUserName = brcPage.kullaniciProfilIsmi.getText();
+        Assert.assertEquals(actualUserName, ConfigReader.getProperty("brcValidUserName"));
 
         Driver.closeDriver();
     }
@@ -44,10 +46,6 @@ public class PozitifLoginTest {
         başardık
     }
  */
-
-
-
-
 
 
 }

@@ -1,6 +1,6 @@
 package tests.day16_annotations;
 
-import Utilites.TestBase;
+import utilities.TestBase;
 import org.testng.annotations.Test;
 
 public class C01_BeforeMethod_AfterMethod extends TestBase {

@@ -1,6 +1,6 @@
 package tests.day17_pom;
 
-import Utilites.Driver;
+import utilities.Driver;
 import org.testng.annotations.Test;
 
 public class C01_YeniDriverIlkClass {

@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" > <!-- BURASI OLMAZSA OLMAZ-->
+<suite name="tumTestler" verbose="2">
+    <test name="regression">
+        <packages>
+            <package name="tests.*"></package>
+        </packages>
+    </test>
+</suite>

@@ -1,4 +1,4 @@
-package Utilites;
+package utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -8,10 +8,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.opera.OperaDriver;
-import org.openqa.selenium.safari.SafariDriver;
-import org.testng.annotations.BeforeMethod;
 
-import javax.crypto.spec.OAEPParameterSpec;
 import java.time.Duration;
 
 public class Driver {

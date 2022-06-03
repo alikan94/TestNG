@@ -1,6 +1,6 @@
 package tests.day16_annotations;
 
-import Utilites.TestBase;
+import utilities.TestBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;

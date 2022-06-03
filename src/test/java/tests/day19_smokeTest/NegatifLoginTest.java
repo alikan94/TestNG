@@ -1,17 +1,17 @@
 package tests.day19_smokeTest;
 
-import Utilites.ConfigReader;
-import Utilites.Driver;
+import utilities.ConfigReader;
+import utilities.Driver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.BrcPage;
 
 public class NegatifLoginTest {
-    BrcPage brcPage = new BrcPage();
+    BrcPage brcPage;
 
     @Test
     public void yanlisSifre() {
-
+        brcPage = new BrcPage();
         // Bir test method olustur positiveLoginTest()
         //         https://www.bluerentalcars.com/ adresine git
         Driver.getDriver().get(ConfigReader.getProperty("brcUrl"));

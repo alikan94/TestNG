@@ -1,8 +1,7 @@
 package tests.day18_pom;
 
-import Utilites.ConfigReader;
-import Utilites.Driver;
-import com.github.javafaker.Faker;
+import utilities.ConfigReader;
+import utilities.Driver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.FacebookPage;

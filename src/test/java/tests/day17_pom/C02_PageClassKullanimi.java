@@ -1,6 +1,6 @@
 package tests.day17_pom;
 
-import Utilites.Driver;
+import utilities.Driver;
 import org.openqa.selenium.Keys;
 import org.testng.Assert;
 import org.testng.annotations.Test;

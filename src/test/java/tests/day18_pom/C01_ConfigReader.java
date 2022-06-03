@@ -1,7 +1,7 @@
 package tests.day18_pom;
 
-import Utilites.ConfigReader;
-import Utilites.Driver;
+import utilities.ConfigReader;
+import utilities.Driver;
 import org.testng.annotations.Test;
 
 public class C01_ConfigReader {
